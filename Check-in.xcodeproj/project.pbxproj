@@ -67,11 +67,11 @@
 				E7BABB5E28C849B800216BBC /* Check-in.entitlements */,
 				E7BABB5028C847FB00216BBC /* Check_inApp.swift */,
 				E7BABB6228C84DC900216BBC /* Color+Ext.swift */,
-				E7BABB5428C8480200216BBC /* Assets.xcassets */,
 				E7BABB6428C84F2700216BBC /* AppTabView.swift */,
 				E7BABB6628C84F7700216BBC /* LocationMapView.swift */,
 				E7BABB6828C84F9D00216BBC /* LocationListView.swift */,
 				E7BABB6A28C84FB100216BBC /* ProfileView.swift */,
+				E7BABB5428C8480200216BBC /* Assets.xcassets */,
 				E7BABB5628C8480200216BBC /* Preview Content */,
 			);
 			path = "Check-in";
