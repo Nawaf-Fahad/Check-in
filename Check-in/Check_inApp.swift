@@ -11,7 +11,7 @@ import SwiftUI
 struct Check_inApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppTabView()
         }
     }
 }

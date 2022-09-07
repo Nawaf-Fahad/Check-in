@@ -8,17 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E7BABB5128C847FB00216BBC /* Check_inApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BABB5028C847FB00216BBC /* Check_inApp.swift */; };
-		E7BABB5328C847FB00216BBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BABB5228C847FB00216BBC /* ContentView.swift */; };
 		E7BABB5528C8480200216BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BABB5428C8480200216BBC /* Assets.xcassets */; };
 		E7BABB5828C8480200216BBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BABB5728C8480200216BBC /* Preview Assets.xcassets */; };
+		E7BABB6128C84A2200216BBC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BABB6028C84A2200216BBC /* CloudKit.framework */; };
+		E7BABB6328C84DC900216BBC /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BABB6228C84DC900216BBC /* Color+Ext.swift */; };
+		E7BABB6528C84F2700216BBC /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BABB6428C84F2700216BBC /* AppTabView.swift */; };
+		E7BABB6728C84F7700216BBC /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BABB6628C84F7700216BBC /* LocationMapView.swift */; };
+		E7BABB6928C84F9D00216BBC /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BABB6828C84F9D00216BBC /* LocationListView.swift */; };
+		E7BABB6B28C84FB100216BBC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BABB6A28C84FB100216BBC /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7BABB4D28C847FB00216BBC /* Check-in.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Check-in.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BABB5028C847FB00216BBC /* Check_inApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check_inApp.swift; sourceTree = "<group>"; };
-		E7BABB5228C847FB00216BBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7BABB5428C8480200216BBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7BABB5728C8480200216BBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7BABB5E28C849B800216BBC /* Check-in.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Check-in.entitlements"; sourceTree = "<group>"; };
+		E7BABB6028C84A2200216BBC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		E7BABB6228C84DC900216BBC /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		E7BABB6428C84F2700216BBC /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		E7BABB6628C84F7700216BBC /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
+		E7BABB6828C84F9D00216BBC /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		E7BABB6A28C84FB100216BBC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BABB6128C84A2200216BBC /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +49,7 @@
 			children = (
 				E7BABB4F28C847FB00216BBC /* Check-in */,
 				E7BABB4E28C847FB00216BBC /* Products */,
+				E7BABB5F28C84A2200216BBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +64,14 @@
 		E7BABB4F28C847FB00216BBC /* Check-in */ = {
 			isa = PBXGroup;
 			children = (
+				E7BABB5E28C849B800216BBC /* Check-in.entitlements */,
 				E7BABB5028C847FB00216BBC /* Check_inApp.swift */,
-				E7BABB5228C847FB00216BBC /* ContentView.swift */,
+				E7BABB6228C84DC900216BBC /* Color+Ext.swift */,
 				E7BABB5428C8480200216BBC /* Assets.xcassets */,
+				E7BABB6428C84F2700216BBC /* AppTabView.swift */,
+				E7BABB6628C84F7700216BBC /* LocationMapView.swift */,
+				E7BABB6828C84F9D00216BBC /* LocationListView.swift */,
+				E7BABB6A28C84FB100216BBC /* ProfileView.swift */,
 				E7BABB5628C8480200216BBC /* Preview Content */,
 			);
 			path = "Check-in";
@@ -65,6 +83,14 @@
 				E7BABB5728C8480200216BBC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E7BABB5F28C84A2200216BBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7BABB6028C84A2200216BBC /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7BABB5328C847FB00216BBC /* ContentView.swift in Sources */,
 				E7BABB5128C847FB00216BBC /* Check_inApp.swift in Sources */,
+				E7BABB6728C84F7700216BBC /* LocationMapView.swift in Sources */,
+				E7BABB6928C84F9D00216BBC /* LocationListView.swift in Sources */,
+				E7BABB6528C84F2700216BBC /* AppTabView.swift in Sources */,
+				E7BABB6B28C84FB100216BBC /* ProfileView.swift in Sources */,
+				E7BABB6328C84DC900216BBC /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Check-in/Check-in.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Check-in/Preview Content\"";
@@ -293,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Check-in/Check-in.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Check-in/Preview Content\"";
