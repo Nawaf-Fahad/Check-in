@@ -17,6 +17,11 @@
 		E7BABB6728C84F7700216BBC /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BABB6628C84F7700216BBC /* LocationMapView.swift */; };
 		E7BABB6928C84F9D00216BBC /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BABB6828C84F9D00216BBC /* LocationListView.swift */; };
 		E7BABB6B28C84FB100216BBC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BABB6A28C84FB100216BBC /* ProfileView.swift */; };
+		E7E4412F28CCA6C60030CCF7 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E4412E28CCA6C60030CCF7 /* LocationCell.swift */; };
+		E7E4413128CCA70C0030CCF7 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E4413028CCA70C0030CCF7 /* AvatarView.swift */; };
+		E7E4413328CCAD190030CCF7 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E4413228CCAD190030CCF7 /* CustomModifiers.swift */; };
+		E7E4413528CCAE680030CCF7 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E4413428CCAE680030CCF7 /* View+Ext.swift */; };
+		E7E4413728CCB52E0030CCF7 /* DDGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E4413628CCB52E0030CCF7 /* DDGButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		E7BABB6628C84F7700216BBC /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
 		E7BABB6828C84F9D00216BBC /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		E7BABB6A28C84FB100216BBC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E7E4412E28CCA6C60030CCF7 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		E7E4413028CCA70C0030CCF7 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		E7E4413228CCAD190030CCF7 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		E7E4413428CCAE680030CCF7 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		E7E4413628CCB52E0030CCF7 /* DDGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,14 +76,10 @@
 		E7BABB4F28C847FB00216BBC /* Check-in */ = {
 			isa = PBXGroup;
 			children = (
+				E7E4413928CCB9430030CCF7 /* Views */,
+				E7E4413828CCB92D0030CCF7 /* Extensions */,
 				E7BABB5E28C849B800216BBC /* Check-in.entitlements */,
 				E7BABB5028C847FB00216BBC /* Check_inApp.swift */,
-				E7BABB6228C84DC900216BBC /* Color+Ext.swift */,
-				E7BABB6428C84F2700216BBC /* AppTabView.swift */,
-				E7BABB6628C84F7700216BBC /* LocationMapView.swift */,
-				E7BABB6828C84F9D00216BBC /* LocationListView.swift */,
-				E7BABB6A28C84FB100216BBC /* ProfileView.swift */,
-				E788A2C728CA604C00F03D4B /* LocationDetailView.swift */,
 				E7BABB5428C8480200216BBC /* Assets.xcassets */,
 				E7BABB5628C8480200216BBC /* Preview Content */,
 			);
@@ -94,6 +100,55 @@
 				E7BABB6028C84A2200216BBC /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7E4413828CCB92D0030CCF7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7E4413428CCAE680030CCF7 /* View+Ext.swift */,
+				E7BABB6228C84DC900216BBC /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E7E4413928CCB9430030CCF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7E4413228CCAD190030CCF7 /* CustomModifiers.swift */,
+				E7E4413C28CCB9E70030CCF7 /* CustomView */,
+				E7E4413B28CCB9C80030CCF7 /* Cells */,
+				E7E4413A28CCB96D0030CCF7 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E7E4413A28CCB96D0030CCF7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E7BABB6828C84F9D00216BBC /* LocationListView.swift */,
+				E7BABB6428C84F2700216BBC /* AppTabView.swift */,
+				E7BABB6628C84F7700216BBC /* LocationMapView.swift */,
+				E7BABB6A28C84FB100216BBC /* ProfileView.swift */,
+				E788A2C728CA604C00F03D4B /* LocationDetailView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E7E4413B28CCB9C80030CCF7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E7E4412E28CCA6C60030CCF7 /* LocationCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E7E4413C28CCB9E70030CCF7 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				E7E4413628CCB52E0030CCF7 /* DDGButton.swift */,
+				E7E4413028CCA70C0030CCF7 /* AvatarView.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,11 +222,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7BABB5128C847FB00216BBC /* Check_inApp.swift in Sources */,
+				E7E4413328CCAD190030CCF7 /* CustomModifiers.swift in Sources */,
 				E7BABB6728C84F7700216BBC /* LocationMapView.swift in Sources */,
 				E7BABB6928C84F9D00216BBC /* LocationListView.swift in Sources */,
 				E788A2C828CA604C00F03D4B /* LocationDetailView.swift in Sources */,
 				E7BABB6528C84F2700216BBC /* AppTabView.swift in Sources */,
 				E7BABB6B28C84FB100216BBC /* ProfileView.swift in Sources */,
+				E7E4413528CCAE680030CCF7 /* View+Ext.swift in Sources */,
+				E7E4412F28CCA6C60030CCF7 /* LocationCell.swift in Sources */,
+				E7E4413728CCB52E0030CCF7 /* DDGButton.swift in Sources */,
+				E7E4413128CCA70C0030CCF7 /* AvatarView.swift in Sources */,
 				E7BABB6328C84DC900216BBC /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

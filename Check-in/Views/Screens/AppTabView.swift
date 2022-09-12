@@ -18,10 +18,12 @@ struct AppTabView: View {
                 .tabItem{
                     Label("List", systemImage: "list.dash")
                 }
-            ProfileView()
-                .tabItem{
-                    Label("Profile", systemImage: "person")
-                }
+            NavigationView{
+                ProfileView()
+            }
+            .tabItem{
+                Label("Profile", systemImage: "person")
+            }
         }
         .accentColor(.brandPrimary)
     }

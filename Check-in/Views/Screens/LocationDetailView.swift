@@ -14,22 +14,14 @@ struct LocationDetailView: View {
     var body: some View {
 
             VStack(spacing: 16){
-                Image("default-banner-asset")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height:120)
+                BannerImageView(imageName: "default-banner-asset")
                 HStack{
-                    Label("1111 main street", systemImage: "mappin.and.ellipse")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
+                    AddressView(address: "1111 main street")
                     Spacer()
                 }
                 .padding(.horizontal)
                 
-                Text("This is a descrption for testing perpouse , This is a descrption for testing perpouse,This is a descrption for testing perpouse")
-                    .lineLimit(3)
-                    .minimumScaleFactor(0.75)
-                    .padding(.horizontal)
+                DescriptionView(text: "This is a descrption for testing perpouse , This is a descrption for testing perpouse,This is a descrption for testing perpouse")
                 
          
                 ZStack{
@@ -135,5 +127,34 @@ struct FirstNameAvatarView:View{
                 .lineLimit(1)
                 .minimumScaleFactor(0.75)
         }
+    }
+}
+
+struct BannerImageView: View {
+    var imageName:String
+    var body: some View {
+        Image(imageName)
+            .resizable()
+            .scaledToFill()
+            .frame(height:120)
+    }
+}
+
+struct AddressView: View {
+    var address:String
+    var body: some View {
+        Label(address, systemImage: "mappin.and.ellipse")
+            .font(.caption)
+            .foregroundColor(.secondary)
+    }
+}
+
+struct DescriptionView: View {
+    var text :String
+    var body: some View {
+        Text(text)
+            .lineLimit(3)
+            .minimumScaleFactor(0.75)
+            .padding(.horizontal)
     }
 }
