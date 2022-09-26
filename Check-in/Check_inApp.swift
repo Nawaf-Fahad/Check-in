@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Check_inApp: App {
+    let locationsManager = LocationManager()
     var body: some Scene {
         WindowGroup {
-            AppTabView()
+            AppTabView().environmentObject(locationsManager)
         }
     }
 }

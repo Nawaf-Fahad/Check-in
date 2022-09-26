@@ -11,7 +11,7 @@ struct LocationCell:View{
     var location : DDGLocation
     var body: some View{
         HStack{
-            Image("default-square-asset")
+            Image(uiImage: location.createSquareImage())
                 .resizable()
                 .scaledToFit()
                 .frame(width: 80, height: 80)
