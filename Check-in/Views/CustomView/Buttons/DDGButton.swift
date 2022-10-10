@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
-
 struct DDGButton: View {
-    var title : String
+    
+    var title: String
+    
     var body: some View {
         Text(title)
             .bold()
@@ -21,6 +22,6 @@ struct DDGButton: View {
 
 struct DDGButton_Previews: PreviewProvider {
     static var previews: some View {
-        DDGButton(title: "Test button")
+        DDGButton(title: "Test Button")
     }
 }

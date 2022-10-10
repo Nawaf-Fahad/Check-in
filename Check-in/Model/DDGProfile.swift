@@ -6,8 +6,9 @@
 //
 
 import CloudKit
+import UIKit
 
-struct DDGProfile{
+struct DDGProfile : Identifiable{
     static let kFirstName   = "firstname"
     static let kLastName    = "lastname"
     static let kAvater      = "avater"
@@ -16,7 +17,7 @@ struct DDGProfile{
     static let kIsCheckedIn = "isCheckedIn"
 
     
-    let ckRecordID  : CKRecord.ID
+    let id  : CKRecord.ID
     let firstname   : String
     let lastname    : String
     let avater      : CKAsset!
@@ -26,12 +27,18 @@ struct DDGProfile{
 
     
     init(record: CKRecord) {
-        ckRecordID       = record.recordID
+        id       = record.recordID
         firstname        = record[DDGProfile.kFirstName] as? String ?? "N/A"
         lastname         = record[DDGProfile.kLastName] as? String ?? "N/A"
         avater           = record[DDGProfile.kAvater] as? CKAsset
         companyName      = record[DDGProfile.kCompanyName] as? String ?? "N/A"
         bio              = record[DDGProfile.kBio] as? String ?? "N/A"
 
+    }
+    
+    func createAvaterImage() -> UIImage {
+        guard let avater = avater else { return PlaceholderImage.avatar }
+        return avater.converToUIImage(in: .square)
+        
     }
 }

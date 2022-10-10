@@ -9,22 +9,25 @@ import SwiftUI
 
 struct AppTabView: View {
     var body: some View {
-        TabView{
+        TabView {
             LocationMapView()
-                .tabItem{
+                .tabItem {
                     Label("Map", systemImage: "map")
                 }
+            
             LocationListView()
-                .tabItem{
-                    Label("List", systemImage: "list.dash")
+                .tabItem {
+                    Label("Locations", systemImage: "building")
                 }
-            NavigationView{
+            
+            NavigationView {
                 ProfileView()
             }
-            .tabItem{
+            .tabItem {
                 Label("Profile", systemImage: "person")
             }
         }
+        .onAppear{ CloudKitManager.shared.getUserRecord()}
         .accentColor(.brandPrimary)
     }
 }
