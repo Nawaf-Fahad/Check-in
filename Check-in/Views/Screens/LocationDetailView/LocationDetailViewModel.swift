@@ -4,6 +4,7 @@
 //
 //  Created by Nawaf Alotaibi on 05/10/2022.
 //
+
 import SwiftUI
 import MapKit
 import CloudKit
@@ -38,7 +39,7 @@ final class LocationDetailViewModel: ObservableObject {
     
     func callLocation() {
         guard let url = URL(string: "tel://\(location.phoneNumber)") else {
-            alertItem = AlertContext.invaildPhoneNumber
+            alertItem = AlertContext.invaildProfile
             return
         }
         
@@ -77,8 +78,10 @@ final class LocationDetailViewModel: ObservableObject {
                     switch checkInStatus {
                         case .checkedIn:
                             record[DDGProfile.kIsCheckedIn] = CKRecord.Reference(recordID: location.id, action: .none)
+                            record[DDGProfile.kIsCheckedInNilCheck] = 1
                         case .checkedOut:
                             record[DDGProfile.kIsCheckedIn] = nil
+                            record[DDGProfile.kIsCheckedInNilCheck] = nil
                     }
                     
                     CloudKitManager.shared.save(record: record) { result in

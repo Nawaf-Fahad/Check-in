@@ -95,9 +95,8 @@ struct LocationDetailView: View {
                     .transition(AnyTransition.opacity.animation(.easeOut(duration: 0.35)))
                     .zIndex(1)
                 
-                ProfileModalView(isShowingProfileModel: $viewModel.isShowingProfileModal,
-                                 profile: DDGProfile(record: MockData.profile))
                 
+                ProfileModalView(isShowingProfileModel: $viewModel.isShowingProfileModal, profile: DDGProfile(record: MockData.profile))
                     .transition(.opacity.combined(with: .slide))
                     .animation(.easeOut)
                     .zIndex(2)
