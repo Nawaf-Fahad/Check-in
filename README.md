@@ -29,5 +29,4 @@ user need to fill (ALL) this fileds
 
 
 ### user can update his/her profile 
-UpdateProfile.PNG
 <img src="ScreenShots/UpdateProfile.PNG" alt="drawing" width="200"/>
