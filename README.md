@@ -23,5 +23,11 @@ red dot represent user location
 user need to fill (ALL) this fileds 
 
 
+## Next Screen 
+
+<img src="ScreenShots/profile after reg.PNG" alt="drawing" width="200"/>
 
 
+### user can update his/her profile 
+UpdateProfile.PNG
+<img src="ScreenShots/UpdateProfile.PNG" alt="drawing" width="200"/>
