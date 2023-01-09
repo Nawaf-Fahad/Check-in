@@ -46,7 +46,9 @@ user can access Resturent from Map (OR) List
 
 ### from here user can use Map to navigte or access Resturent WebSite or call Resturent or use check in button to reveal his location to freinds
 
+#### after click (check-in) button 
 
+<img src="ScreenShots/RestPage.PNG" alt="drawing" width="200"/>
 
 
 
