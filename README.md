@@ -53,3 +53,9 @@ user can access Resturent from Map (OR) List
 
 <img src="ScreenShots/plusOne.PNG" alt="drawing" width="200"/>
 
+
+You can use and test app from here 
+https://testflight.apple.com/join/bTQdOkAy
+
+
+Thanks for Sean Allen 
