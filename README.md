@@ -31,7 +31,7 @@ user need to fill (ALL) this fileds
 ### user can update his/her profile 
 <img src="ScreenShots/UpdateProfile.PNG" alt="drawing" width="200"/>
 
-
+### 
 
 ### Resturent List 
 
@@ -46,9 +46,10 @@ user can access Resturent from Map (OR) List
 
 ### from here user can use Map to navigte or access Resturent WebSite or call Resturent or use check in button to reveal his location to freinds
 
-#### after click (check-in) button 
+#### after click (check-in) button user information will apper in who's there section and
 
-<img src="ScreenShots/RestPage.PNG" alt="drawing" width="200"/>
+<img src="ScreenShots/ListPlusOne.PNG" alt="drawing" width="200"/>
 
 
+<img src="ScreenShots/plusOne.PNG" alt="drawing" width="200"/>
 
