@@ -54,6 +54,8 @@ user can access Resturent from Map (OR) List
 <img src="ScreenShots/plusOne.PNG" alt="drawing" width="200"/>
 
 
+## Importent Notes:
+app Work in light and dark Mode
 You can use and test app from here 
 https://testflight.apple.com/join/bTQdOkAy
 
